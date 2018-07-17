@@ -1,0 +1,5 @@
+CONTAINER ID        IMAGE                                     COMMAND                  CREATED             STATUS              PORTS                                            NAMES
+fbb8ef92e2db        hyperledger/fabric-peer:x86_64-1.1.0      "peer node start"        18 minutes ago      Up 18 minutes       0.0.0.0:7051->7051/tcp, 0.0.0.0:7053->7053/tcp   peer0.org1.example.com
+9880ff20034a        hyperledger/fabric-couchdb:x86_64-0.4.6   "tini -- /docker-ent…"   18 minutes ago      Up 18 minutes       4369/tcp, 9100/tcp, 0.0.0.0:5984->5984/tcp       couchdb
+377d13ea1e7b        hyperledger/fabric-orderer:x86_64-1.1.0   "orderer"                18 minutes ago      Up 18 minutes       0.0.0.0:7050->7050/tcp                           orderer.example.com
+13fc6c9f9854        hyperledger/fabric-ca:x86_64-1.1.0        "sh -c 'fabric-ca-se…"   18 minutes ago      Up 18 minutes       0.0.0.0:7054->7054/tcp                           ca.org1.example.com
